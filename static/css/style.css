@@ -1,0 +1,20 @@
+.container-1{
+    border: 2px solid blue;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.flex-box-container-1{
+    display: flex;
+    border: 2px solid blue;
+    padding: 10px;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+}
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+    border: 2px solid blue;
+    align-items: center;
+}
