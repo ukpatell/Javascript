@@ -3,8 +3,7 @@
 function ageInDays(){
         currentYear = new Date().getFullYear();             // Returns the current year
         var birthYear = prompt("What year were you born?"); // Input
-        if(birthYear < 0 || birthYear > currentYear){
-                alert('Invalid Entry. Retr')
+        if(birthYear <= 0 || birthYear > currentYear){
                 reset();
             }
         var age = (currentYear-birthYear)*365;
