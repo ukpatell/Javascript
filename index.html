@@ -39,6 +39,24 @@
             <img id="scissors"src="https://cdn1.vectorstock.com/i/thumb-large/13/10/cute-cartoon-character-of-sharp-scissors-vector-2641310.jpg" height=150 width=150 alt="scissors" onclick="rpsGame(this)">
         </div>
     </div>
+    <div class="container-4">
+        <h2 id="change-my-color">Buttons Color Changer</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">LinkedIn</button>
+            <button class="btn btn-danger">YouTube</button>
+            <button class="btn btn-warning">Bing</button>
+            <button class="btn btn-success">WhatsApp</button>
+        </div>
+
+    </div>
     <script src="static/js/script.js"></script>
 </body>
 </html>
