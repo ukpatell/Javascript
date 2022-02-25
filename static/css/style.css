@@ -1,22 +1,50 @@
- .container-1,.container-2,.container-3,.container-4{
+ .container-1,.container-2,.container-3,.container-4,.container-5{
     border: 2px solid blue;
     width: 75%;
     margin: 0 auto;
     text-align: center;
     background-color: lightgrey
 }
-.flex-box-container-1,.flex-box-container-2,.flex-box-rps,.flex-box-pick-color{
+.flex-box-container-1,.flex-box-container-2,.flex-box-rps,.flex-box-pick-color,.flex-blackjack-row-1,.flex-blackjack-row-2,.flex-blackjack-row-3{
     display: flex;
     border: 2px transparent blue;
     padding: 10px;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.flex-blackjack-row-1,.flex-blackjack-row-2,.flex-blackjack-row-3{
+    background-image: url('https://th.bing.com/th/id/R.461ee75bfa3d6a635b4c935ab0008599?rik=ZY0u%2f8JzsjpBlw&riu=http%3a%2f%2fimg.freepik.com%2ffree-photo%2fgrunge-background--paper_19-118905.jpg%3fsize%3d338%26ext%3djpg&ehk=gnf2912d5Kj1es7n9%2bMOTilhRsll3m9PPKwWefsBoqo%3d&risl=&pid=ImgRaw&r=0');
+    background-position: center;
+    color: white;
+}
+.flex-blackjack-row-1 div{
+    padding: 10px;
+    height: 350px;
+    text-align: center;
+    flex: 1;
+}
+.flex-blackjack-row-1 img{
+    width: 25%;
+    padding: 10px;
+}
+.flex-blackjack-row-2 button{
+    padding: 10px;
 
-.flex-box-container-1 div{
+}
+.flex-blackjack-row-2 div{
+    padding: 10px;
+}
+table,th,td{
+    border-block-end-style: unset;
+    border : 2px solid black;
+    padding: 10px;
+
+}
+.flex-box-container-1 {
     display: flex;
     padding: 10px;
     align-items: center;
+    text-align: center;
 }
 .flex-box-container-2 img{
     margin: 10px;
