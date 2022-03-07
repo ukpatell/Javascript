@@ -184,9 +184,9 @@ let blackjackGame = {
 const YOU = blackjackGame["you"];
 const DEALER = blackjackGame["dealer"];
 
-const hitSound = new Audio("static/sounds/swish.m4a");
-const winSound = new Audio("static/sounds/cash.mp3");
-const lossSound = new Audio("static/sounds/aww.mp3");
+const hitSound = new Audio("static/sounds/javaplayground/swish.m4a");
+const winSound = new Audio("static/sounds/javaplayground/cash.mp3");
+const lossSound = new Audio("static/sounds/javaplayground/aww.mp3");
 
 document
   .querySelector("#blackjack-hit-button")
@@ -217,7 +217,7 @@ function randomCard() {
 function showCard(card, activePlayer) {
   if (activePlayer["score"] <= 21) {
     let cardImage = document.createElement("img");
-    cardImage.src = `static/images/${card}.png`;
+    cardImage.src = `static/images/javaplayground/${card}.png`;
     document.querySelector(activePlayer["div"]).appendChild(cardImage);
     hitSound.play();
   }
