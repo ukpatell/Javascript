@@ -1,0 +1,47 @@
+body{
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container-padding50{
+    padding-top:50px;
+}
+
+.container-textinput{
+    width:80%;
+    display: inline-block;
+    padding: 20px;
+    font-size: 25px;;
+    border: 2px solid slateblue;
+    border-radius:5px;
+}
+.container-button{
+    width:10%;
+    display: inline-block;
+    padding: 20px;
+    font-size: 25px;;
+    border: 2px solid darkgreen;
+    background-color: green;
+    font-family: "Helvetica Neue";
+    color: white;
+    border-radius:5px;
+}
+.js-container{
+    border: 2px solid slateblue;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: contain;
+    width: 96%;
+    margin-top: 15px;
+    /* justify-content: space-evenly; */
+    /* align-content: center; */
+    /* word-break: break-word; */
+}
+
+.container-image{
+    width: 30%;
+    display: block;
+    float: left;
+    margin-right: 3%;
+}

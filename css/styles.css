@@ -5,6 +5,7 @@
 body {
     font-family: "Helvetica Neue",Helvetica;
     background: lightblue;
+    word-break: break-word;
 }
 .main-cards{
     display: flex;
@@ -25,6 +26,8 @@ body {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     width: 100%;
+    object-fit: cover;
+    height: 250px;
 }
 
 .title{
