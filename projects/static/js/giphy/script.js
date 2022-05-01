@@ -1,6 +1,8 @@
 // Search when pressed on go
 function go() {
     var input = document.querySelector('input').value;
+    var container = document.querySelector('.js-container');
+    container.innerHTML = "";
     pushToDOM(input);
 }
 
@@ -9,6 +11,8 @@ var input = document.querySelector('input').addEventListener('keyup', (e) => {
     var input = document.querySelector('input').value;
 
     if (e.which === 13) {
+        var container = document.querySelector('.js-container');
+        container.innerHTML = "";
         pushToDOM(input);
     }
 })
@@ -19,16 +23,6 @@ var input = document.querySelector('input').addEventListener('keyup', (e) => {
 var apiKey = '&api_key=ql0MZqkfEmUpACXeFKv94jkOXz5X9wUU';
 var searchUrl = 'https://api.giphy.com/v1/gifs/search?q='
 
-input = 'funny cat'
-// var GiphyAJAXCall = new XMLHttpRequest();
-// GiphyAJAXCall.open('GET', (searchUrl + input + apiKey));
-// GiphyAJAXCall.send(); 
-
-// GiphyAJAXCall.addEventListener('load',(e)=>{
-//     var data = e.target.response;
-//     pushToDOM(data);
-// });
-// Display the results
 function pushToDOM(input) {
 
     var GiphyAJAXCall = new XMLHttpRequest();
